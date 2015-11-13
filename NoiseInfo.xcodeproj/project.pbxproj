@@ -14,6 +14,18 @@
 		1883BD001BE86CDF003D728C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1883BCFF1BE86CDF003D728C /* Images.xcassets */; };
 		1883BD031BE86CDF003D728C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1883BD011BE86CDF003D728C /* LaunchScreen.xib */; };
 		1883BD0F1BE86CE0003D728C /* NoiseInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BD0E1BE86CE0003D728C /* NoiseInfoTests.m */; };
+		1883BD1E1BE87342003D728C /* MBProgressHUD+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BD1A1BE87342003D728C /* MBProgressHUD+HM.m */; };
+		1883BD1F1BE87342003D728C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1883BD1B1BE87342003D728C /* MBProgressHUD.bundle */; };
+		1883BD201BE87342003D728C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BD1D1BE87342003D728C /* MBProgressHUD.m */; };
+		1883BD231BE87482003D728C /* NoiseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BD221BE87482003D728C /* NoiseInfo.m */; };
+		1883BD251BE87928003D728C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1883BD241BE87928003D728C /* MapKit.framework */; };
+		1883BD281BE9108A003D728C /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BD271BE9108A003D728C /* MyAnnotation.m */; };
+		18ADB8E71BEDB49C0050322C /* MyAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADB8E61BEDB49C0050322C /* MyAnnotationView.m */; };
+		18ADB8E91BEE92A80050322C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADB8E81BEE92A80050322C /* AudioToolbox.framework */; };
+		18ADB8EB1BEE92B10050322C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADB8EA1BEE92B10050322C /* AVFoundation.framework */; };
+		18ADB8ED1BEE92B60050322C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADB8EC1BEE92B60050322C /* AVKit.framework */; };
+		18D8A6DF1BEA9B2F000A8E4F /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8A6DE1BEA9B2F000A8E4F /* RecordViewController.m */; };
+		18D8A6E21BEC8E47000A8E4F /* testNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8A6E11BEC8E47000A8E4F /* testNav.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,25 @@
 		1883BD081BE86CDF003D728C /* NoiseInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoiseInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1883BD0D1BE86CE0003D728C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1883BD0E1BE86CE0003D728C /* NoiseInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoiseInfoTests.m; sourceTree = "<group>"; };
+		1883BD191BE87342003D728C /* MBProgressHUD+HM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HM.h"; sourceTree = "<group>"; };
+		1883BD1A1BE87342003D728C /* MBProgressHUD+HM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HM.m"; sourceTree = "<group>"; };
+		1883BD1B1BE87342003D728C /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		1883BD1C1BE87342003D728C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1883BD1D1BE87342003D728C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1883BD211BE87482003D728C /* NoiseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseInfo.h; sourceTree = "<group>"; };
+		1883BD221BE87482003D728C /* NoiseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseInfo.m; sourceTree = "<group>"; };
+		1883BD241BE87928003D728C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1883BD261BE9108A003D728C /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		1883BD271BE9108A003D728C /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		18ADB8E51BEDB49C0050322C /* MyAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotationView.h; sourceTree = "<group>"; };
+		18ADB8E61BEDB49C0050322C /* MyAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotationView.m; sourceTree = "<group>"; };
+		18ADB8E81BEE92A80050322C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		18ADB8EA1BEE92B10050322C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18ADB8EC1BEE92B60050322C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		18D8A6DD1BEA9B2F000A8E4F /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordViewController.h; path = ../RecordViewController.h; sourceTree = "<group>"; };
+		18D8A6DE1BEA9B2F000A8E4F /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordViewController.m; path = ../RecordViewController.m; sourceTree = "<group>"; };
+		18D8A6E01BEC8E47000A8E4F /* testNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testNav.h; path = ../testNav.h; sourceTree = "<group>"; };
+		18D8A6E11BEC8E47000A8E4F /* testNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testNav.m; path = ../testNav.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ADB8ED1BEE92B60050322C /* AVKit.framework in Frameworks */,
+				18ADB8EB1BEE92B10050322C /* AVFoundation.framework in Frameworks */,
+				18ADB8E91BEE92A80050322C /* AudioToolbox.framework in Frameworks */,
+				1883BD251BE87928003D728C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,10 @@
 		1883BCE61BE86CDF003D728C = {
 			isa = PBXGroup;
 			children = (
+				18ADB8EC1BEE92B60050322C /* AVKit.framework */,
+				18ADB8EA1BEE92B10050322C /* AVFoundation.framework */,
+				18ADB8E81BEE92A80050322C /* AudioToolbox.framework */,
+				1883BD241BE87928003D728C /* MapKit.framework */,
 				1883BCF11BE86CDF003D728C /* NoiseInfo */,
 				1883BD0B1BE86CDF003D728C /* NoiseInfoTests */,
 				1883BCF01BE86CDF003D728C /* Products */,
@@ -81,14 +120,25 @@
 		1883BCF11BE86CDF003D728C /* NoiseInfo */ = {
 			isa = PBXGroup;
 			children = (
+				18D8A6E01BEC8E47000A8E4F /* testNav.h */,
+				18D8A6E11BEC8E47000A8E4F /* testNav.m */,
+				1883BD181BE87342003D728C /* MBProgessHUD */,
 				1883BCF61BE86CDF003D728C /* AppDelegate.h */,
 				1883BCF71BE86CDF003D728C /* AppDelegate.m */,
 				1883BCF91BE86CDF003D728C /* ViewController.h */,
+				18D8A6DD1BEA9B2F000A8E4F /* RecordViewController.h */,
+				18D8A6DE1BEA9B2F000A8E4F /* RecordViewController.m */,
 				1883BCFA1BE86CDF003D728C /* ViewController.m */,
 				1883BCFC1BE86CDF003D728C /* Main.storyboard */,
 				1883BCFF1BE86CDF003D728C /* Images.xcassets */,
 				1883BD011BE86CDF003D728C /* LaunchScreen.xib */,
 				1883BCF21BE86CDF003D728C /* Supporting Files */,
+				1883BD211BE87482003D728C /* NoiseInfo.h */,
+				1883BD221BE87482003D728C /* NoiseInfo.m */,
+				1883BD261BE9108A003D728C /* MyAnnotation.h */,
+				1883BD271BE9108A003D728C /* MyAnnotation.m */,
+				18ADB8E51BEDB49C0050322C /* MyAnnotationView.h */,
+				18ADB8E61BEDB49C0050322C /* MyAnnotationView.m */,
 			);
 			path = NoiseInfo;
 			sourceTree = "<group>";
@@ -117,6 +167,18 @@
 				1883BD0D1BE86CE0003D728C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1883BD181BE87342003D728C /* MBProgessHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1883BD191BE87342003D728C /* MBProgressHUD+HM.h */,
+				1883BD1A1BE87342003D728C /* MBProgressHUD+HM.m */,
+				1883BD1B1BE87342003D728C /* MBProgressHUD.bundle */,
+				1883BD1C1BE87342003D728C /* MBProgressHUD.h */,
+				1883BD1D1BE87342003D728C /* MBProgressHUD.m */,
+			);
+			path = MBProgessHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1883BCFE1BE86CDF003D728C /* Main.storyboard in Resources */,
+				1883BD1F1BE87342003D728C /* MBProgressHUD.bundle in Resources */,
 				1883BD031BE86CDF003D728C /* LaunchScreen.xib in Resources */,
 				1883BD001BE86CDF003D728C /* Images.xcassets in Resources */,
 			);
@@ -221,7 +284,14 @@
 			files = (
 				1883BCFB1BE86CDF003D728C /* ViewController.m in Sources */,
 				1883BCF81BE86CDF003D728C /* AppDelegate.m in Sources */,
+				1883BD201BE87342003D728C /* MBProgressHUD.m in Sources */,
+				1883BD1E1BE87342003D728C /* MBProgressHUD+HM.m in Sources */,
+				1883BD281BE9108A003D728C /* MyAnnotation.m in Sources */,
+				1883BD231BE87482003D728C /* NoiseInfo.m in Sources */,
 				1883BCF51BE86CDF003D728C /* main.m in Sources */,
+				18ADB8E71BEDB49C0050322C /* MyAnnotationView.m in Sources */,
+				18D8A6DF1BEA9B2F000A8E4F /* RecordViewController.m in Sources */,
+				18D8A6E21BEC8E47000A8E4F /* testNav.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +486,7 @@
 				1883BD141BE86CE0003D728C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1883BD151BE86CE0003D728C /* Build configuration list for PBXNativeTarget "NoiseInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +495,7 @@
 				1883BD171BE86CE0003D728C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
