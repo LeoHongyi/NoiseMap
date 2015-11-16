@@ -72,7 +72,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kBQ-2O-vLD" kind="push" id="Xi3-be-mjQ"/>
+                                    <action selector="register" destination="Dft-yF-irD" eventType="touchUpInside" id="TDf-aT-Eyy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,27 +84,71 @@
                         <outlet property="passwordField" destination="IW6-DK-1nO" id="P8p-ab-SDR"/>
                         <outlet property="usernameField" destination="c6o-BF-cB9" id="y4O-4m-kcx"/>
                         <segue destination="vXZ-lx-hvc" kind="push" identifier="login2map" id="1xu-qL-Md4"/>
+                        <segue destination="kBQ-2O-vLD" kind="push" identifier="login2Reg" id="AiX-QU-imf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlc-YP-Lo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1537" y="-727"/>
         </scene>
-        <!--Record View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="ek2-RH-dcx">
             <objects>
-                <viewController id="kBQ-2O-vLD" customClass="RecordViewController" sceneMemberID="viewController">
+                <viewController id="kBQ-2O-vLD" customClass="RegisterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PAq-Fn-V4q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5L3-1T-svz">
+                                <rect key="frame" x="16" y="108" width="92" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MW9-WW-cHz">
+                                <rect key="frame" x="16" y="187" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please input username" minimumFontSize="17" id="Orl-Pz-N3V">
+                                <rect key="frame" x="135" y="110" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please input password" minimumFontSize="17" id="sZ4-sw-4Wm">
+                                <rect key="frame" x="135" y="183" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JEd-n0-gVR">
+                                <rect key="frame" x="0.0" y="269" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="register:" destination="kBQ-2O-vLD" eventType="touchUpInside" id="lcM-As-DeY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="eZS-zd-EhT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="regPwdTextField" destination="sZ4-sw-4Wm" id="0xA-Lk-dL9"/>
+                        <outlet property="registerBtn" destination="JEd-n0-gVR" id="gyT-X5-LhQ"/>
+                        <outlet property="reguserTextField" destination="Orl-Pz-N3V" id="vSK-Ul-N9z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dY-Pz-8Wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1133" y="-709"/>
+            <point key="canvasLocation" x="-1128" y="-769"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">

@@ -10,11 +10,14 @@
 #import "MBProgressHUD+HM.h"
 #import "ViewController.h"
 
-@interface loginViewController ()<UITextFieldDelegate>
+@interface loginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 - (IBAction)login:(id)sender;
+- (IBAction)register;
+
+
 
 @end
 
@@ -78,6 +81,11 @@
         }
     }];
     
+    
+}
+
+- (IBAction)register {
+    [self performSegueWithIdentifier:@"login2Reg" sender:nil];
     
 }
 @end
