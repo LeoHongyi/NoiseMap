@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180B46D91BFA5395002F3BE4 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B46D81BFA5395002F3BE4 /* loginViewController.m */; };
+		180B46DF1BFA8902002F3BE4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B46DE1BFA8902002F3BE4 /* RegisterViewController.m */; };
 		1883BCF51BE86CDF003D728C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BCF41BE86CDF003D728C /* main.m */; };
 		1883BCF81BE86CDF003D728C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BCF71BE86CDF003D728C /* AppDelegate.m */; };
 		1883BCFB1BE86CDF003D728C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883BCFA1BE86CDF003D728C /* ViewController.m */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180B46D71BFA5395002F3BE4 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loginViewController.h; path = ../loginViewController.h; sourceTree = "<group>"; };
+		180B46D81BFA5395002F3BE4 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loginViewController.m; path = ../loginViewController.m; sourceTree = "<group>"; };
+		180B46DD1BFA8902002F3BE4 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = ../RegisterViewController.h; sourceTree = "<group>"; };
+		180B46DE1BFA8902002F3BE4 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = ../RegisterViewController.m; sourceTree = "<group>"; };
 		1883BCEF1BE86CDF003D728C /* NoiseInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoiseInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1883BCF31BE86CDF003D728C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1883BCF41BE86CDF003D728C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +126,10 @@
 		1883BCF11BE86CDF003D728C /* NoiseInfo */ = {
 			isa = PBXGroup;
 			children = (
+				180B46DD1BFA8902002F3BE4 /* RegisterViewController.h */,
+				180B46DE1BFA8902002F3BE4 /* RegisterViewController.m */,
+				180B46D71BFA5395002F3BE4 /* loginViewController.h */,
+				180B46D81BFA5395002F3BE4 /* loginViewController.m */,
 				18D8A6E01BEC8E47000A8E4F /* testNav.h */,
 				18D8A6E11BEC8E47000A8E4F /* testNav.m */,
 				1883BD181BE87342003D728C /* MBProgessHUD */,
@@ -286,8 +296,10 @@
 				1883BCF81BE86CDF003D728C /* AppDelegate.m in Sources */,
 				1883BD201BE87342003D728C /* MBProgressHUD.m in Sources */,
 				1883BD1E1BE87342003D728C /* MBProgressHUD+HM.m in Sources */,
+				180B46D91BFA5395002F3BE4 /* loginViewController.m in Sources */,
 				1883BD281BE9108A003D728C /* MyAnnotation.m in Sources */,
 				1883BD231BE87482003D728C /* NoiseInfo.m in Sources */,
+				180B46DF1BFA8902002F3BE4 /* RegisterViewController.m in Sources */,
 				1883BCF51BE86CDF003D728C /* main.m in Sources */,
 				18ADB8E71BEDB49C0050322C /* MyAnnotationView.m in Sources */,
 				18D8A6DF1BEA9B2F000A8E4F /* RecordViewController.m in Sources */,

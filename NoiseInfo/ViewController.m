@@ -21,6 +21,9 @@
 @property(nonatomic,strong) CLLocationManager *mgr;
 @property(nonatomic,strong) NSString *latitude;
 @property(nonatomic,strong) NSString *longtitude;
+- (IBAction)logout:(id)sender;
+
+
 //@property(nonatomic,strong) CLGeocoder *geocoder;
 - (IBAction)backToUserLocation:(id)sender;
 
@@ -225,6 +228,21 @@
 - (IBAction)backToUserLocation:(id)sender {
     CLLocationCoordinate2D center = self.mapView.userLocation.location.coordinate;
     [self.mapView setCenterCoordinate:center animated:YES]; 
+}
+
+
+- (IBAction)logout:(id)sender {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"sure logout？" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"YES" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
+        
+    }];
+    [alert addAction:ok];
+    [alert addAction:cancel];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
