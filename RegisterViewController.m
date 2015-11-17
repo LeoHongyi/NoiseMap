@@ -72,7 +72,7 @@
            [self.navigationController popViewControllerAnimated:YES];
             
         }else{
-            [MBProgressHUD showError:@"register error!"];
+            [MBProgressHUD showError:@"register user exists"];
             
         
         

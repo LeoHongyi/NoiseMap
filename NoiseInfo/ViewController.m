@@ -177,7 +177,7 @@
     double east= (center.longitude)+(mapView.region.span.longitudeDelta)/2;
     NSLog(@"%f,%f,%f,%f",north,west,south,east);
     
-    if (north < 40.95 && south > 40.55) {
+    if (north < 40.95 && north > 40.55 && south > 40.55 && south < 40.95 && east < -73.85 && east > -74.25 && west > -74.25 && west < 73.85) {
           NSArray *arr = [NSArray arrayWithObjects:[NSNumber numberWithFloat:east],[NSNumber numberWithFloat:west],[NSNumber numberWithFloat:south],[NSNumber numberWithFloat:north],nil];
         NSLog(@"%@",arr);
         [self loadNoiseDataWithArr:arr];
