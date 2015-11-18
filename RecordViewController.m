@@ -49,6 +49,7 @@
 
     self.longtitude.text = self.lon;
     self.latitude.text = self.lat;
+    self.userTextField.text = self.user;
     //self.user = self.userTextField.text;
     self.offset = NOISE_RECOGNIZER_DEFAULT_OFFSET;
     self.range = NOISE_RECOGNIZER_DEFAULT_RANGE;

@@ -221,6 +221,8 @@
         RecordViewController *record = (RecordViewController *)nav.topViewController;
         record.lon = self.longtitude;
         record.lat = self.latitude;
+        //NSLog(@"%@",self.username);
+        record.user = self.username;
     }
   
 }

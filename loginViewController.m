@@ -76,7 +76,10 @@
         if ([str intValue] == 1) {
             [self performSegueWithIdentifier:@"login2map" sender:nil];
         }else{
+            
             [MBProgressHUD showError:@"username or password error!"];
+            
+            
            
         }
     }];
@@ -87,5 +90,15 @@
 - (IBAction)register {
     [self performSegueWithIdentifier:@"login2Reg" sender:nil];
     
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"login2map"]){
+        UIViewController *descV = segue.destinationViewController;
+        ViewController *map = (ViewController *)descV;
+        descV.title = [NSString stringWithFormat:@"%@'s map",self.usernameField.text];
+        map.username  = self.usernameField.text;
+    }
 }
 @end

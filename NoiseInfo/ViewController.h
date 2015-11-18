@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-
+@property NSString *username;
 
 @end
 
