@@ -13,7 +13,9 @@
 @interface loginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIView *loginView;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+
 - (IBAction)login:(id)sender;
 - (IBAction)register;
 
@@ -76,8 +78,8 @@
         if ([str intValue] == 1) {
             [self performSegueWithIdentifier:@"login2map" sender:nil];
         }else{
-            
-            [MBProgressHUD showError:@"username or password error!"];
+            [self showError:@"username or password error!"];
+            //[MBProgressHUD showError:@"username or password error!"];
             
             
            
@@ -100,5 +102,26 @@
         descV.title = [NSString stringWithFormat:@"%@'s map",self.usernameField.text];
         map.username  = self.usernameField.text;
     }
+}
+
+-(void)showError:(NSString *)errorMsg{
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Login Fail" message:errorMsg delegate:nil cancelButtonTitle:@"sure" otherButtonTitles:nil, nil];
+    [alert show];
+    
+    CAKeyframeAnimation *shakeAnim = [CAKeyframeAnimation animation];
+    shakeAnim.keyPath = @"transform.translation.x";
+    shakeAnim.duration = 0.15;
+    CGFloat delta = 10;
+    
+    
+    
+    shakeAnim.values = @[@0,@(-delta),@(delta),@0];
+    shakeAnim.repeatCount = 2;
+    [self.loginView.layer addAnimation:shakeAnim forKey:nil];
+    
+    
+    
+    
+    
 }
 @end

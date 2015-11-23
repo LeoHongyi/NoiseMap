@@ -12,6 +12,8 @@
 @interface RegisterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *reguserTextField;
 @property (weak, nonatomic) IBOutlet UITextField *regPwdTextField;
+@property (weak, nonatomic) IBOutlet UITextField *regrePwdTextField;
+
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 - (IBAction)register:(id)sender;
 
@@ -28,6 +30,8 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.reguserTextField];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.regPwdTextField];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.regrePwdTextField];
+    
 }
 
 -(void)dealloc
@@ -45,7 +49,12 @@
 
 -(void)textChange
 {
-    self.registerBtn.enabled = (self.reguserTextField.text.length && self.regPwdTextField.text.length);
+    NSString *regPwd = self.regPwdTextField.text;
+    NSString *reRegPwd = self.regrePwdTextField.text;
+    BOOL a = [regPwd isEqualToString:reRegPwd];
+    //NSLog(@"%d",a);
+    
+    self.registerBtn.enabled = (self.reguserTextField.text.length && self.regPwdTextField.text.length && a);
 }
 
 

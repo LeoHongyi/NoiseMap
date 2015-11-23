@@ -75,7 +75,8 @@
 
 - (IBAction)upload:(id)sender {
     self.user = self.userTextField.text;
-  NSLog(@"%@,%@,%@,%@",self.lat,self.lon,self.db1,self.user);
+    //self.db1 = self.db.text;
+  //NSLog(@"%@,%@,%@,%@",self.lat,self.lon,self.db1,self.user);
 //    if (self.user.length == 0) {
 //        [MBProgressHUD showError:@"please input user name"];
 //        return;
@@ -98,7 +99,7 @@
         if (data) {
             NSLog(@"success");
            NSLog(@"%@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
-          [self dismissViewControllerAnimated:YES completion:nil];
+            [self dismissViewControllerAnimated:YES completion:nil];
         }
         
         
